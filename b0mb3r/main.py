@@ -31,7 +31,7 @@ class AttackLogic:
         status[self.attack_id]["started_at"] = datetime.now().isoformat()
         status[self.attack_id]["end_at"] = len(usable_services) * self.number_of_cycles
 
-        logger.info(f"Starting attack {self.attack_id} on +{self.phone}...")
+        logger.info(f"Stating attack {self.attack_id} on +{self.phone}...")
 
         for cycle in range(self.number_of_cycles):
             logger.info(f"Started cycle {cycle + 1} of attack {self.attack_id}")
